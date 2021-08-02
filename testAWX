@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    testvar01: "A pedido do Flávio"
+  tasks:
+    - debug:
+        var: testvar01
